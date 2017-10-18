@@ -1,0 +1,27 @@
+
+class FindingSuspects:
+
+    def __init__(self):
+        self.persons=[]
+        
+    def push(self, person):
+        self.persons.append(person)
+        
+    def suspectfactor(self):
+        return self.persons.pop()
+        
+    def __str__(self):
+        return str(self.persons)
+        
+if __name__=="__main__":
+    a=FindingSuspects()
+ 
+
+a.push("Erin")
+a.push("Sandra")
+a.push("Emily")
+a.push("Mum")
+
+print a
+print a.suspectfactor()
+        
