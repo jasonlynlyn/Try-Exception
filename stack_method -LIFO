@@ -1,0 +1,25 @@
+
+class FoodPoisoning:
+
+  def __init__(self):
+    self.foods=[]
+
+  def eat(self, food):
+    self.foods.append(food)
+    
+  def throwup(self):
+    return self.foods.pop()
+    
+  def __str__(self):
+    return str(self.foods)
+    
+if __name__=="__main__":
+    a=FoodPoisoning()
+    
+a.eat("apple") #first thing you eat
+a.eat("mars bar") #second thing you eat
+a.eat("peanut") #third thing you eat
+a.eat("Ice cream")
+
+print a
+print a.throwup()
